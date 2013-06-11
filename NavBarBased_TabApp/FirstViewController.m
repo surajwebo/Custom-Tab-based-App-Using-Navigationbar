@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "UIColor+UIColorCategory.h"
 
 UIView *bottomBar;
 UIButton *btn1;
@@ -22,7 +23,9 @@ UIButton *btn5;
     [super viewDidLoad];
     
     self.title = @"First";
-    
+//    UIColor *color1 = [UIColor colorWithHex:0xFF0000];
+    UIColor *color2 = [UIColor colorWithHexString:@"#bab9a9"]; //#54544b
+    [self.view setBackgroundColor:color2];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

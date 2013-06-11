@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "FirstViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIColor+UIColorCategory.h"
 
 UIView *bottomBar;
 UIButton *btn1;
@@ -28,6 +29,9 @@ UIButton *btn5;
     [super viewDidLoad];
     self.title = @"Root";
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+//    UIColor *color1 = [UIColor colorWithHex:0xFF0000];
+    UIColor *color2 = [UIColor colorWithHexString:@"#779438"]; //#54544b
+    [self.view setBackgroundColor:color2];
 }
 
 - (void)didReceiveMemoryWarning

@@ -22,6 +22,7 @@
 		69AB1C6517670BEF00E7F022 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C6417670BEF00E7F022 /* FirstViewController.xib */; };
 		69AB1C6717671A0B00E7F022 /* bottom-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C6617671A0B00E7F022 /* bottom-bar.png */; };
 		69AB1C6917672D0B00E7F022 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AB1C6817672D0B00E7F022 /* QuartzCore.framework */; };
+		69AB1C6F17674E7600E7F022 /* UIColor+UIColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AB1C6E17674E7600E7F022 /* UIColor+UIColorCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		69AB1C6417670BEF00E7F022 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		69AB1C6617671A0B00E7F022 /* bottom-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-bar.png"; sourceTree = "<group>"; };
 		69AB1C6817672D0B00E7F022 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69AB1C6D17674E7600E7F022 /* UIColor+UIColorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorCategory.h"; sourceTree = "<group>"; };
+		69AB1C6E17674E7600E7F022 /* UIColor+UIColorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColorCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		69AB1C4217670B4500E7F022 /* NavBarBased_TabApp */ = {
 			isa = PBXGroup;
 			children = (
+				69AB1C6D17674E7600E7F022 /* UIColor+UIColorCategory.h */,
+				69AB1C6E17674E7600E7F022 /* UIColor+UIColorCategory.m */,
 				69AB1C4B17670B4500E7F022 /* AppDelegate.h */,
 				69AB1C4C17670B4500E7F022 /* AppDelegate.m */,
 				69AB1C5417670B4500E7F022 /* RootViewController.h */,
@@ -195,6 +200,7 @@
 				69AB1C4D17670B4500E7F022 /* AppDelegate.m in Sources */,
 				69AB1C5617670B4500E7F022 /* RootViewController.m in Sources */,
 				69AB1C6317670BDB00E7F022 /* FirstViewController.m in Sources */,
+				69AB1C6F17674E7600E7F022 /* UIColor+UIColorCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
