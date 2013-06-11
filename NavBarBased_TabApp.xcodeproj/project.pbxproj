@@ -16,8 +16,12 @@
 		69AB1C4F17670B4500E7F022 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C4E17670B4500E7F022 /* Default.png */; };
 		69AB1C5117670B4500E7F022 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C5017670B4500E7F022 /* Default@2x.png */; };
 		69AB1C5317670B4500E7F022 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C5217670B4500E7F022 /* Default-568h@2x.png */; };
-		69AB1C5617670B4500E7F022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AB1C5517670B4500E7F022 /* ViewController.m */; };
-		69AB1C5917670B4500E7F022 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C5717670B4500E7F022 /* ViewController.xib */; };
+		69AB1C5617670B4500E7F022 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AB1C5517670B4500E7F022 /* RootViewController.m */; };
+		69AB1C6017670BA600E7F022 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C5F17670BA600E7F022 /* RootViewController.xib */; };
+		69AB1C6317670BDB00E7F022 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AB1C6217670BDB00E7F022 /* FirstViewController.m */; };
+		69AB1C6517670BEF00E7F022 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C6417670BEF00E7F022 /* FirstViewController.xib */; };
+		69AB1C6717671A0B00E7F022 /* bottom-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AB1C6617671A0B00E7F022 /* bottom-bar.png */; };
+		69AB1C6917672D0B00E7F022 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AB1C6817672D0B00E7F022 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +38,14 @@
 		69AB1C4E17670B4500E7F022 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		69AB1C5017670B4500E7F022 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		69AB1C5217670B4500E7F022 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		69AB1C5417670B4500E7F022 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		69AB1C5517670B4500E7F022 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		69AB1C5817670B4500E7F022 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		69AB1C5417670B4500E7F022 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		69AB1C5517670B4500E7F022 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		69AB1C5F17670BA600E7F022 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		69AB1C6117670BDB00E7F022 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		69AB1C6217670BDB00E7F022 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		69AB1C6417670BEF00E7F022 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		69AB1C6617671A0B00E7F022 /* bottom-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-bar.png"; sourceTree = "<group>"; };
+		69AB1C6817672D0B00E7F022 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AB1C6917672D0B00E7F022 /* QuartzCore.framework in Frameworks */,
 				69AB1C3D17670B4500E7F022 /* UIKit.framework in Frameworks */,
 				69AB1C3F17670B4500E7F022 /* Foundation.framework in Frameworks */,
 				69AB1C4117670B4500E7F022 /* CoreGraphics.framework in Frameworks */,
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				69AB1C4217670B4500E7F022 /* NavBarBased_TabApp */,
+				69AB1C4317670B4500E7F022 /* Supporting Files */,
 				69AB1C3B17670B4500E7F022 /* Frameworks */,
 				69AB1C3A17670B4500E7F022 /* Products */,
 			);
@@ -73,6 +84,7 @@
 		69AB1C3B17670B4500E7F022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69AB1C6817672D0B00E7F022 /* QuartzCore.framework */,
 				69AB1C3C17670B4500E7F022 /* UIKit.framework */,
 				69AB1C3E17670B4500E7F022 /* Foundation.framework */,
 				69AB1C4017670B4500E7F022 /* CoreGraphics.framework */,
@@ -85,10 +97,12 @@
 			children = (
 				69AB1C4B17670B4500E7F022 /* AppDelegate.h */,
 				69AB1C4C17670B4500E7F022 /* AppDelegate.m */,
-				69AB1C5417670B4500E7F022 /* ViewController.h */,
-				69AB1C5517670B4500E7F022 /* ViewController.m */,
-				69AB1C5717670B4500E7F022 /* ViewController.xib */,
-				69AB1C4317670B4500E7F022 /* Supporting Files */,
+				69AB1C5417670B4500E7F022 /* RootViewController.h */,
+				69AB1C5517670B4500E7F022 /* RootViewController.m */,
+				69AB1C5F17670BA600E7F022 /* RootViewController.xib */,
+				69AB1C6117670BDB00E7F022 /* FirstViewController.h */,
+				69AB1C6217670BDB00E7F022 /* FirstViewController.m */,
+				69AB1C6417670BEF00E7F022 /* FirstViewController.xib */,
 			);
 			path = NavBarBased_TabApp;
 			sourceTree = "<group>";
@@ -96,6 +110,7 @@
 		69AB1C4317670B4500E7F022 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				69AB1C6617671A0B00E7F022 /* bottom-bar.png */,
 				69AB1C4417670B4500E7F022 /* NavBarBased_TabApp-Info.plist */,
 				69AB1C4517670B4500E7F022 /* InfoPlist.strings */,
 				69AB1C4817670B4500E7F022 /* main.m */,
@@ -105,6 +120,7 @@
 				69AB1C5217670B4500E7F022 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = NavBarBased_TabApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +178,9 @@
 				69AB1C4F17670B4500E7F022 /* Default.png in Resources */,
 				69AB1C5117670B4500E7F022 /* Default@2x.png in Resources */,
 				69AB1C5317670B4500E7F022 /* Default-568h@2x.png in Resources */,
-				69AB1C5917670B4500E7F022 /* ViewController.xib in Resources */,
+				69AB1C6017670BA600E7F022 /* RootViewController.xib in Resources */,
+				69AB1C6517670BEF00E7F022 /* FirstViewController.xib in Resources */,
+				69AB1C6717671A0B00E7F022 /* bottom-bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +193,8 @@
 			files = (
 				69AB1C4917670B4500E7F022 /* main.m in Sources */,
 				69AB1C4D17670B4500E7F022 /* AppDelegate.m in Sources */,
-				69AB1C5617670B4500E7F022 /* ViewController.m in Sources */,
+				69AB1C5617670B4500E7F022 /* RootViewController.m in Sources */,
+				69AB1C6317670BDB00E7F022 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +207,6 @@
 				69AB1C4617670B4500E7F022 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		69AB1C5717670B4500E7F022 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69AB1C5817670B4500E7F022 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,7 +274,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NavBarBased_TabApp/NavBarBased_TabApp-Prefix.pch";
 				INFOPLIST_FILE = "NavBarBased_TabApp/NavBarBased_TabApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,7 +287,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NavBarBased_TabApp/NavBarBased_TabApp-Prefix.pch";
 				INFOPLIST_FILE = "NavBarBased_TabApp/NavBarBased_TabApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
