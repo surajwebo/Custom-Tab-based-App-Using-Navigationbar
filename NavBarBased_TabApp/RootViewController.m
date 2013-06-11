@@ -49,27 +49,27 @@ UIButton *btn5;
     [self.navigationController.view addSubview:bottomBar];
     
     btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn1 setFrame:CGRectMake(0, 0, 100, 48)];
+    [btn1 setFrame:CGRectMake(0, 0, 100, 58)];
     [btn1 setTitle:@"Tab 1" forState:UIControlStateNormal];
     [btn1 addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     btn2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn2 setFrame:CGRectMake(120, 0, 100, 48)];
+    [btn2 setFrame:CGRectMake(120, 0, 100, 58)];
     [btn2 setTitle:@"Tab 2" forState:UIControlStateNormal];
     [btn2 addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     btn3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn3 setFrame:CGRectMake(240, 0, 100, 48)];
+    [btn3 setFrame:CGRectMake(240, 0, 100, 58)];
     [btn3 setTitle:@"Tab 3" forState:UIControlStateNormal];
     [btn3 addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     btn4 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn4 setFrame:CGRectMake(360, 0, 100, 48)];
+    [btn4 setFrame:CGRectMake(360, 0, 100, 58)];
     [btn4 setTitle:@"Tab 4" forState:UIControlStateNormal];
     [btn4 addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     btn5 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn5 setFrame:CGRectMake(self.view.bounds.size.width-100, 0, 100, 48)];
+    [btn5 setFrame:CGRectMake(self.view.bounds.size.width-100, 0, 100, 58)];
     [btn5 setTitle:@"HOME" forState:UIControlStateNormal];
     [btn5 addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
