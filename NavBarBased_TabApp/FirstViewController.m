@@ -15,6 +15,8 @@ UIButton *btn2;
 UIButton *btn3;
 UIButton *btn4;
 UIButton *btn5;
+BOOL isTabViewSlided;
+UIButton *tabSliderBtn;
 
 @implementation FirstViewController
 
@@ -38,6 +40,9 @@ UIButton *btn5;
     [btn5 setHidden:NO];
     [btn5 removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
     [btn5 addTarget:self action:@selector(popScreens) forControlEvents:UIControlEventTouchUpInside];
+    
+    [tabSliderBtn removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
+    [tabSliderBtn addTarget:self action:@selector(tabSliderBtnAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)buttonAction {
@@ -46,6 +51,34 @@ UIButton *btn5;
 
 -(void)popScreens {
     [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
+- (IBAction)tabSliderBtnAction:(id)sender {
+    if (isTabViewSlided)
+        [self collapseMenu];
+    else
+        [self expandMenu];
+}
+-(void)expandMenu
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.75];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [bottomBar setFrame:CGRectMake(bottomBar.bounds.origin.x, self.view.bounds.size.height-38,bottomBar.bounds.size.width,bottomBar.bounds.size.height)];
+    [tabSliderBtn setTitle:@"^" forState:UIControlStateNormal];
+    [UIView commitAnimations];
+    isTabViewSlided = YES;
+}
+
+-(void)collapseMenu
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.75];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [bottomBar setFrame:CGRectMake(bottomBar.bounds.origin.x, self.view.bounds.size.height+5,bottomBar.bounds.size.width,bottomBar.bounds.size.height)];
+    [tabSliderBtn setTitle:@"V" forState:UIControlStateNormal];
+    [UIView commitAnimations];
+    isTabViewSlided = NO;
 }
 
 @end
