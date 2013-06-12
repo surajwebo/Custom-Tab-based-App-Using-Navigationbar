@@ -65,7 +65,7 @@ UIButton *tabSliderBtn;
     [UIView setAnimationDuration:0.75];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [bottomBar setFrame:CGRectMake(bottomBar.bounds.origin.x, self.view.bounds.size.height-38,bottomBar.bounds.size.width,bottomBar.bounds.size.height)];
-    [tabSliderBtn setTitle:@"^" forState:UIControlStateNormal];
+    [tabSliderBtn setTitle:@"v" forState:UIControlStateNormal];
     [UIView commitAnimations];
     isTabViewSlided = YES;
 }
@@ -76,7 +76,7 @@ UIButton *tabSliderBtn;
     [UIView setAnimationDuration:0.75];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [bottomBar setFrame:CGRectMake(bottomBar.bounds.origin.x, self.view.bounds.size.height+5,bottomBar.bounds.size.width,bottomBar.bounds.size.height)];
-    [tabSliderBtn setTitle:@"V" forState:UIControlStateNormal];
+    [tabSliderBtn setTitle:@"^" forState:UIControlStateNormal];
     [UIView commitAnimations];
     isTabViewSlided = NO;
 }

@@ -70,6 +70,8 @@ UIButton *tabSliderBtn;
     [tabSliderBtn setTitle:@"^" forState:UIControlStateNormal];
     [tabSliderBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [tabSliderBtn setBackgroundColor:[UIColor clearColor]];
+    [tabSliderBtn.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [tabSliderBtn.layer setBorderWidth:1.0f];
     
     [self enhanceUI :btn1 :[UIColor lightGrayColor] :[UIColor purpleColor]];
     [self enhanceUI :btn2 :[UIColor lightGrayColor] :[UIColor yellowColor]];
@@ -172,7 +174,7 @@ UIButton *tabSliderBtn;
     [UIView setAnimationDuration:0.75];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [bottomBar setFrame:CGRectMake(bottomBar.bounds.origin.x, self.view.bounds.size.height-38,bottomBar.bounds.size.width,bottomBar.bounds.size.height)];
-    [tabSliderBtn setTitle:@"V" forState:UIControlStateNormal];
+    [tabSliderBtn setTitle:@"v" forState:UIControlStateNormal];
     [UIView commitAnimations];
     isTabViewSlided = YES;
 }
